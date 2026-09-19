@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="%BASE_URL%assets/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hairv Club — Fun Your Hair</title>
+    <meta name="description" content="Hairv Club: cortes, cores e texturas para cabelo que não quer parecer com todo mundo." />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header id="header" class="fixed top-0 inset-x-0 z-50 transition-colors duration-300">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8 flex items-center justify-between h-24">
+        <a href="#top" class="flex items-center gap-3 shrink-0">
+          <img src="%BASE_URL%assets/logo.png" alt="Hairv Club" class="h-14 sm:h-16 w-auto" />
+        </a>
+
+        <nav class="hidden md:flex items-center gap-8 font-medium text-sm tracking-wide">
+          <a href="#midia" class="nav-link">Mídia</a>
+          <a href="#sobre" class="nav-link">Sobre</a>
+          <a href="#local" class="nav-link">O espaço</a>
+          <a href="#galeria" class="nav-link">Galeria</a>
+          <a href="#contato" class="nav-link">Contato</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <a
+            href="https://wa.me/5500000000000"
+            target="_blank"
+            rel="noopener"
+            class="btn-pill bg-mustard text-wine hover:-rotate-2 hover:scale-105 text-sm sm:text-base px-4 sm:px-6 py-2.5 sm:py-3"
+          >
+            Agendar
+          </a>
+          <button id="menu-toggle" class="menu-toggle md:hidden" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu">
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+
+      <nav id="mobile-menu" class="mobile-menu md:hidden">
+        <a href="#midia" class="mobile-nav-link">Mídia</a>
+        <a href="#sobre" class="mobile-nav-link">Sobre</a>
+        <a href="#local" class="mobile-nav-link">O espaço</a>
+        <a href="#galeria" class="mobile-nav-link">Galeria</a>
+        <a href="#contato" class="mobile-nav-link">Contato</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <!-- HERO -->
+      <section id="hero" class="relative overflow-hidden bg-wine text-blush pt-24">
+        <div class="blob blob-violet -top-32 -left-40 w-[32rem] h-[32rem]"></div>
+        <div class="blob blob-coral top-1/3 -right-48 w-[36rem] h-[36rem]"></div>
+
+        <div class="relative mx-auto max-w-7xl px-5 sm:px-8 pt-14 pb-20 md:pt-16 md:pb-28">
+          <p class="hero-kicker" data-hero-item>Salão de cabelo autoral</p>
+          <h1 class="hero-title" aria-label="Cabelo que tem opinião">
+            <span class="block" data-hero-item><span class="ht-magenta">CABELO</span></span>
+            <span class="block" data-hero-item><span class="ht-lime">QUE TEM</span></span>
+            <span class="block" data-hero-item><span class="ht-violet">OPINIÃO</span><span class="ht-coral">.</span></span>
+          </h1>
+
+          <div class="mt-10 md:mt-14 max-w-md">
+            <p class="text-lg text-blush/80" data-hero-item>
+              Cortes, cores e texturas pensados pra quem não veio até aqui pra parecer com todo mundo. Se é ousado, é com a gente.
+            </p>
+            <div class="mt-8 flex flex-wrap items-center gap-4" data-hero-item>
+              <a href="https://wa.me/5500000000000" target="_blank" rel="noopener" class="btn-pill bg-magenta text-blush hover:-rotate-2 hover:scale-105">
+                Chamar no WhatsApp
+              </a>
+              <a href="#galeria" class="btn-outline">
+                Ver trabalhos
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MIDIA -->
+      <section id="midia" class="relative bg-wine text-blush py-24 md:py-32 overflow-hidden">
+        <div class="blob blob-coral top-0 -left-48 w-[28rem] h-[28rem] opacity-20"></div>
+
+        <div class="relative mx-auto max-w-7xl px-5 sm:px-8">
+          <h2 class="section-title text-blush max-w-xl">
+            Bastidor, processo e <span class="ht-magenta">resultado</span>.
+          </h2>
+          <p class="mt-5 max-w-lg text-lg text-blush/80">
+            Do balayage às tesouradas finais — o corte inteiro, não só o antes e depois.
+          </p>
+
+          <div class="mt-12 reel-row">
+            <div class="reel-card gallery-pop">
+              <video src="%BASE_URL%assets/videos/reel-01.mp4" poster="%BASE_URL%assets/videos/reel-01-poster.jpg" autoplay muted loop playsinline preload="auto" class="w-full h-full object-cover"></video>
+            </div>
+            <div class="reel-card gallery-pop">
+              <video src="%BASE_URL%assets/videos/reel-02.mp4" poster="%BASE_URL%assets/videos/reel-02-poster.jpg" autoplay muted loop playsinline preload="auto" class="w-full h-full object-cover"></video>
+            </div>
+            <div class="reel-card gallery-pop">
+              <video src="%BASE_URL%assets/videos/reel-03.mp4" poster="%BASE_URL%assets/videos/reel-03-poster.jpg" autoplay muted loop playsinline preload="auto" class="w-full h-full object-cover"></video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOBRE -->
+      <section id="sobre" class="relative bg-blush text-wine py-24 md:py-32 overflow-hidden">
+        <div class="mx-auto max-w-7xl px-5 sm:px-8 grid md:grid-cols-2 gap-16 items-center">
+          <div class="order-2 md:order-1 reveal-left">
+            <h2 class="section-title">
+              Aqui, cabelo diferente<br />é regra <span class="ht-coral">.</span> não exceção.
+            </h2>
+            <p class="mt-6 text-lg leading-relaxed max-w-md">
+              A Hairv Club nasceu pra gente que já cansou de sair do salão parecendo com todo mundo. Trabalhamos coloração livre, desenhos raspados, texturas e cortes autorais — sempre ouvindo o que você quer contar com o seu cabelo antes de pegar na tesoura.
+            </p>
+            <div class="mt-9 flex flex-wrap gap-3">
+              <span class="tag bg-magenta text-blush">coloração livre</span>
+              <span class="tag bg-violet text-blush">cortes autorais</span>
+              <span class="tag bg-coral text-wine">sem julgamento</span>
+            </div>
+          </div>
+
+          <div class="order-1 md:order-2 relative h-[26rem] reveal-right">
+            <div class="arch-frame absolute left-0 top-0 w-56 sm:w-64 rotate-[-4deg] shadow-xl shadow-wine/20 z-10">
+              <img src="%BASE_URL%assets/loja/salon-1.png" alt="Cadeiras e lavatórios do salão com letreiro neon Hairvolucione" class="w-full h-full object-cover" />
+            </div>
+            <div class="arch-frame absolute right-0 bottom-0 w-56 sm:w-64 rotate-[5deg] shadow-xl shadow-wine/20">
+              <img src="%BASE_URL%assets/loja/neon-blob.png" alt="Letreiro neon Hairvolution ao lado de quadro com formas orgânicas roxas" class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LOCAL -->
+      <section id="local" class="relative bg-wine text-blush py-24 md:py-32 overflow-hidden">
+        <div class="blob blob-lime top-10 -right-40 w-[30rem] h-[30rem] opacity-20"></div>
+
+        <div class="relative mx-auto max-w-7xl px-5 sm:px-8">
+          <h2 class="section-title text-blush max-w-xl">
+            Um espaço com a mesma <span class="ht-lime">energia</span> do que sai da cadeira.
+          </h2>
+          <p class="mt-5 max-w-lg text-lg text-blush/80">
+            Neon na parede, espelhos em arco e uma trilha que muda toda semana. Você vem pro corte, mas fica pelo clima.
+          </p>
+
+          <div class="mt-14 grid md:grid-cols-[1.3fr_1fr] gap-6 items-stretch">
+            <div class="grid grid-cols-2 gap-6">
+              <img src="%BASE_URL%assets/loja/salon-2.png" alt="Espelhos em arco com iluminação neon e cadeiras verde-oliva" class="rounded-[2rem] object-cover w-full h-72 sm:h-96 col-span-2 gallery-pop" />
+              <img src="%BASE_URL%assets/loja/storefront.png" alt="Fachada do salão à noite com letreiro neon Hairv Club" class="rounded-[2rem] object-cover w-full h-56 gallery-pop" />
+              <img src="%BASE_URL%assets/loja/salon-1.png" alt="Interior do salão com poltronas e letreiro Hairvolucione" class="rounded-[2rem] object-cover w-full h-56 gallery-pop" />
+            </div>
+
+            <div class="info-card">
+              <p class="text-xs uppercase tracking-[0.2em] text-blush/50 mb-3">Onde encontrar</p>
+              <p class="neon-text text-2xl sm:text-3xl leading-tight">
+                Rua das Cores, 10
+              </p>
+              <p class="mt-2 text-blush/70">Bairro Central</p>
+
+              <div class="mt-8 pt-8 border-t border-blush/15">
+                <p class="text-xs uppercase tracking-[0.2em] text-blush/50 mb-3">Horário</p>
+                <ul class="space-y-1.5 text-blush/85">
+                  <li class="flex justify-between gap-6"><span>Terça — Sexta</span><span>10h – 20h</span></li>
+                  <li class="flex justify-between gap-6"><span>Sábado</span><span>9h – 18h</span></li>
+                  <li class="flex justify-between gap-6"><span>Domingo e Segunda</span><span>fechado</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALERIA -->
+      <section id="galeria" class="relative bg-blush text-wine py-24 md:py-32">
+        <div class="mx-auto max-w-7xl px-5 sm:px-8">
+          <h2 class="section-title max-w-xl">
+            Prova em <span class="ht-magenta">imagem</span>, não em promessa.
+          </h2>
+
+          <div class="mt-14 gallery-grid">
+            <div class="gallery-item gallery-item--tall gallery-pop gallery-sticker bg-violet">
+              <img src="%BASE_URL%assets/colagem/client-06.png" alt="Corte raspado com estampa animal print colorida" class="w-full h-full object-contain" />
+            </div>
+            <div class="gallery-item gallery-pop">
+              <img src="%BASE_URL%assets/loja/salon-2.png" alt="Espelhos em arco iluminados" class="w-full h-full object-cover" />
+            </div>
+            <div class="gallery-item gallery-item--wide gallery-pop">
+              <img src="%BASE_URL%assets/loja/neon-blob.png" alt="Letreiro neon Hairvolution e arte abstrata roxa" class="w-full h-full object-cover" />
+            </div>
+            <div class="gallery-item gallery-pop">
+              <img src="%BASE_URL%assets/loja/storefront.png" alt="Fachada iluminada à noite" class="w-full h-full object-cover" />
+            </div>
+            <div class="gallery-item gallery-pop">
+              <img src="%BASE_URL%assets/loja/salon-1.png" alt="Cadeiras e letreiro Hairvolucione" class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTATO -->
+      <section id="contato" class="relative bg-wine text-blush py-28 md:py-36 overflow-hidden">
+        <div class="blob blob-coral -bottom-40 left-1/2 -translate-x-1/2 w-[40rem] h-[40rem] opacity-25"></div>
+
+        <div class="relative mx-auto max-w-3xl px-5 sm:px-8 text-center">
+          <h2 class="section-title text-blush">
+            Bora criar um cabelo <span class="ht-lime">com a sua cara</span>?
+          </h2>
+          <p class="mt-5 text-lg text-blush/80">
+            Manda mensagem, conta o que tá pensando e a gente encaixa seu horário. Sem roteiro pronto — o cabelo é seu.
+          </p>
+
+          <div class="mt-10 flex flex-wrap justify-center gap-4">
+            <a href="https://wa.me/5500000000000" target="_blank" rel="noopener" class="btn-pill bg-magenta text-blush hover:-rotate-2 hover:scale-105 text-base px-8 py-4">
+              Chamar no WhatsApp
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="btn-outline text-base px-8 py-4">
+              @hairvclub
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-mustard text-wine">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8 py-14 grid sm:grid-cols-[auto_1fr_auto] gap-10 items-center">
+        <img src="%BASE_URL%assets/logo.png" alt="Hairv Club" class="h-16 sm:h-20 w-auto justify-self-center sm:justify-self-start" />
+
+        <nav class="flex flex-wrap gap-x-8 gap-y-2 font-medium justify-center">
+          <a href="#midia" class="nav-link-footer">Mídia</a>
+          <a href="#sobre" class="nav-link-footer">Sobre</a>
+          <a href="#local" class="nav-link-footer">O espaço</a>
+          <a href="#galeria" class="nav-link-footer">Galeria</a>
+          <a href="#contato" class="nav-link-footer">Contato</a>
+        </nav>
+
+        <div class="flex gap-4 justify-center justify-self-center sm:justify-self-end font-medium">
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="nav-link-footer">Instagram</a>
+          <a href="https://wa.me/5500000000000" target="_blank" rel="noopener" class="nav-link-footer">WhatsApp</a>
+        </div>
+      </div>
+      <div class="border-t border-wine/15">
+        <p class="mx-auto max-w-7xl px-5 sm:px-8 py-5 text-sm text-wine/70">
+          © 2026 Hairv Club — Fun your hair.
+        </p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

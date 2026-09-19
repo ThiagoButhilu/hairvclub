@@ -1,3 +1,10 @@
 node_modules
 dist
 .DS_Store
+/assets/
+.claude/scheduled_tasks.lock
+
+# This project's global gitignore blocks index.html and package-lock.json,
+# but both are required for the Vite build and GitHub Pages deploy.
+!index.html
+!package-lock.json
