@@ -137,6 +137,7 @@ body {
 .blob-violet { background: var(--color-violet); opacity: 0.35; }
 .blob-coral { background: var(--color-coral); opacity: 0.28; }
 .blob-lime { background: var(--color-lime); opacity: 0.3; }
+.blob-mustard { background: var(--color-mustard); opacity: 0.28; }
 
 @media (max-width: 640px) {
   .blob {
@@ -195,7 +196,7 @@ body {
 }
 
 .gallery-item--wide {
-  grid-column: span 2;
+  grid-column: span 4;
 }
 
 .gallery-sticker {
@@ -209,18 +210,18 @@ body {
   filter: drop-shadow(0 10px 16px rgba(0, 0, 0, 0.3));
 }
 
-@media (min-width: 640px) {
-  .gallery-item--wide {
-    grid-column: span 2;
-  }
-}
-
 .gallery-pop {
   opacity: 0;
   transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .gallery-pop:hover {
   transform: scale(1.03) rotate(-0.5deg);
+}
+
+/* If the grid has an odd number of tiles, let the last one take the
+   full row instead of leaving an orphaned half-empty row. */
+.gallery-grid > *:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
 }
 
 @media (max-width: 640px) {
@@ -234,12 +235,29 @@ body {
     grid-column: span 1;
     grid-row: span 2;
   }
-  .gallery-grid > .gallery-item:last-child {
-    grid-column: span 2;
-  }
 }
 
 /* ---------- Reels (media section) ---------- */
+
+.section-media {
+  background: linear-gradient(165deg, var(--color-violet) 0%, var(--color-wine) 45%);
+}
+
+.media-divider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(
+    90deg,
+    var(--color-magenta),
+    var(--color-mustard),
+    var(--color-lime),
+    var(--color-violet),
+    var(--color-coral)
+  );
+}
 
 .reel-row {
   display: grid;
