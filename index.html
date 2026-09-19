@@ -49,30 +49,37 @@
 
     <main id="top">
       <!-- HERO -->
-      <section id="hero" class="relative overflow-hidden bg-wine text-blush pt-24">
+      <section id="hero" class="hero-section relative overflow-hidden bg-wine text-blush pt-24 flex items-center">
         <div class="blob blob-violet -top-32 -left-40 w-[32rem] h-[32rem]"></div>
         <div class="blob blob-coral top-1/3 -right-48 w-[36rem] h-[36rem]"></div>
 
-        <div class="relative mx-auto max-w-7xl px-5 sm:px-8 pt-14 pb-20 md:pt-16 md:pb-28">
-          <p class="hero-kicker" data-hero-item>Salão de cabelo autoral</p>
-          <h1 class="hero-title" aria-label="Cabelo que tem opinião">
-            <span class="block" data-hero-item><span class="ht-magenta">CABELO</span></span>
-            <span class="block" data-hero-item><span class="ht-lime">QUE TEM</span></span>
-            <span class="block" data-hero-item><span class="ht-violet">OPINIÃO</span><span class="ht-coral">.</span></span>
-          </h1>
+        <div class="relative mx-auto max-w-7xl px-5 sm:px-8 py-16 grid md:grid-cols-[1.1fr_0.9fr] gap-12 items-center w-full">
+          <div>
+            <p class="hero-kicker" data-hero-item>Salão de cabelo autoral</p>
+            <h1 class="hero-title" aria-label="Cabelo que tem opinião">
+              <span class="block" data-hero-item><span class="ht-magenta">CABELO</span></span>
+              <span class="block" data-hero-item><span class="ht-lime">QUE TEM</span></span>
+              <span class="block" data-hero-item><span class="ht-violet">OPINIÃO</span><span class="ht-coral">.</span></span>
+            </h1>
 
-          <div class="mt-10 md:mt-14 max-w-md">
-            <p class="text-lg text-blush/80" data-hero-item>
-              Cortes, cores e texturas pensados pra quem não veio até aqui pra parecer com todo mundo. Se é ousado, é com a gente.
-            </p>
-            <div class="mt-8 flex flex-wrap items-center gap-4" data-hero-item>
-              <a href="https://wa.me/5500000000000" target="_blank" rel="noopener" class="btn-pill bg-magenta text-blush hover:-rotate-2 hover:scale-105">
-                Chamar no WhatsApp
-              </a>
-              <a href="#galeria" class="btn-outline">
-                Ver trabalhos
-              </a>
+            <div class="mt-10 md:mt-14 max-w-md">
+              <p class="text-lg text-blush/80" data-hero-item>
+                Cortes, cores e texturas pensados pra quem não veio até aqui pra parecer com todo mundo. Se é ousado, é com a gente.
+              </p>
+              <div class="mt-8 flex flex-wrap items-center gap-4" data-hero-item>
+                <a href="https://wa.me/5500000000000" target="_blank" rel="noopener" class="btn-pill bg-magenta text-blush hover:-rotate-2 hover:scale-105">
+                  Chamar no WhatsApp
+                </a>
+                <a href="#galeria" class="btn-outline">
+                  Ver trabalhos
+                </a>
+              </div>
             </div>
+          </div>
+
+          <div class="hero-mark justify-self-center md:justify-self-end" data-hero-item>
+            <div class="hero-mark-glow"></div>
+            <img src="%BASE_URL%assets/logo.png" alt="Hairv Club" class="relative w-full h-auto" />
           </div>
         </div>
       </section>
@@ -173,40 +180,23 @@
       </section>
 
       <!-- GALERIA -->
-      <section id="galeria" class="relative bg-blush text-wine py-24 md:py-32">
+      <section id="galeria" class="relative bg-blush text-wine py-24 md:py-32 overflow-hidden">
         <div class="mx-auto max-w-7xl px-5 sm:px-8">
           <h2 class="section-title max-w-xl">
             Prova em <span class="ht-magenta">imagem</span>, não em promessa.
           </h2>
+        </div>
 
-          <div class="mt-14 gallery-grid">
-            <div class="gallery-item gallery-item--tall gallery-pop gallery-sticker bg-violet">
-              <img src="%BASE_URL%assets/colagem/client-06.png" alt="Corte raspado com estampa animal print colorida" class="w-full h-full object-contain" />
-            </div>
-            <div class="gallery-item gallery-pop">
-              <img src="%BASE_URL%assets/cabelos/portrait-01.jpg" alt="Cliente com cabelo cacheado rosa e loiro, óculos e jaqueta de couro" class="w-full h-full object-cover" />
-            </div>
-            <div class="gallery-item gallery-item--wide gallery-pop">
-              <img src="%BASE_URL%assets/cabelos/portrait-07.jpg" alt="Cliente com cabelo cacheado ruivo e suéter colorido" class="w-full h-full object-cover" />
-            </div>
-            <div class="gallery-item gallery-pop">
-              <img src="%BASE_URL%assets/cabelos/portrait-02.jpg" alt="Cliente com cabelo cacheado curto grisalho" class="w-full h-full object-cover" />
-            </div>
-            <div class="gallery-item gallery-pop">
-              <img src="%BASE_URL%assets/cabelos/portrait-03.jpg" alt="Cliente com cabelo longo ondulado e óculos" class="w-full h-full object-cover" />
-            </div>
-            <div class="gallery-item gallery-pop">
-              <img src="%BASE_URL%assets/cabelos/portrait-04.jpg" alt="Cliente loira com corte em camadas e franja" class="w-full h-full object-cover" />
-            </div>
-            <div class="gallery-item gallery-pop">
-              <img src="%BASE_URL%assets/cabelos/portrait-05.jpg" alt="Cliente com corte curto avermelhado" class="w-full h-full object-cover" />
-            </div>
-            <div class="gallery-item gallery-pop">
-              <img src="%BASE_URL%assets/cabelos/portrait-06.jpg" alt="Cliente com corte em camadas e franja escura" class="w-full h-full object-cover" />
-            </div>
-            <div class="gallery-item gallery-pop">
-              <img src="%BASE_URL%assets/cabelos/portrait-08.jpg" alt="Cliente com cabelo castanho ondulado e franja" class="w-full h-full object-cover" />
-            </div>
+        <div class="carousel mt-14">
+          <div class="carousel-track" id="carousel-track">
+            <div class="carousel-card"><img src="%BASE_URL%assets/cabelos/portrait-01.jpg" alt="Cliente com cabelo cacheado rosa e loiro, óculos e jaqueta de couro" /></div>
+            <div class="carousel-card"><img src="%BASE_URL%assets/cabelos/portrait-02.jpg" alt="Cliente com cabelo cacheado curto grisalho" /></div>
+            <div class="carousel-card"><img src="%BASE_URL%assets/cabelos/portrait-03.jpg" alt="Cliente com cabelo longo ondulado e óculos" /></div>
+            <div class="carousel-card"><img src="%BASE_URL%assets/cabelos/portrait-04.jpg" alt="Cliente loira com corte em camadas e franja" /></div>
+            <div class="carousel-card"><img src="%BASE_URL%assets/cabelos/portrait-05.jpg" alt="Cliente com corte curto avermelhado" /></div>
+            <div class="carousel-card"><img src="%BASE_URL%assets/cabelos/portrait-06.jpg" alt="Cliente com corte em camadas e franja escura" /></div>
+            <div class="carousel-card"><img src="%BASE_URL%assets/cabelos/portrait-07.jpg" alt="Cliente com cabelo cacheado ruivo e suéter colorido" /></div>
+            <div class="carousel-card"><img src="%BASE_URL%assets/cabelos/portrait-08.jpg" alt="Cliente com cabelo castanho ondulado e franja" /></div>
           </div>
         </div>
       </section>

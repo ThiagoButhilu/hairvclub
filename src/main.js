@@ -50,3 +50,37 @@ inView('.gallery-pop', (element) => {
 document.querySelectorAll('.reel-card video').forEach((video) => {
   video.play().catch(() => {})
 })
+
+// Gallery carousel: infinite auto-scroll, pauses on hover/touch
+const track = document.getElementById('carousel-track')
+if (track) {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+  // Duplicate the cards once so the loop can wrap seamlessly
+  const originalCards = Array.from(track.children)
+  originalCards.forEach((card) => {
+    track.appendChild(card.cloneNode(true))
+  })
+
+  if (!reduceMotion) {
+    const play = () => {
+      const setWidth = originalCards.reduce((sum, card) => sum + card.offsetWidth + 24, 0)
+      return animate(
+        track,
+        { x: [0, -setWidth] },
+        { duration: setWidth / 40, easing: 'linear', repeat: Infinity }
+      )
+    }
+
+    let controls = play()
+    const carousel = track.closest('.carousel')
+
+    const pause = () => controls.pause()
+    const resume = () => controls.play()
+
+    carousel.addEventListener('mouseenter', pause)
+    carousel.addEventListener('mouseleave', resume)
+    carousel.addEventListener('touchstart', pause, { passive: true })
+    carousel.addEventListener('touchend', resume)
+  }
+}
